@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>CG 3D | Dev</title>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<!-- Bootstrap files (jQuery first, then Popper.js, then Bootstrap JS) -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+/// some script
+
+// jquery ready start
+$(document).ready(function() {
+	// jQuery code
+
+	// add padding top to show content behind navbar
+	$('body').css('padding-top', $('.navbar').outerHeight() + 'px')
+
+	//////////////////////// detect scroll top or down
+    if ($('.smart-scroll').length > 0) { // check if element exists
+         var last_scroll_top = 0;
+        $(window).on('scroll', function() {
+            scroll_top = $(this).scrollTop();
+            if(scroll_top < last_scroll_top) {
+                $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
+            }
+            else {
+                $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
+            }
+            last_scroll_top = scroll_top;
+        });
+    }
+
+	
+}); // jquery end
+</script>
+
+<style type="text/css">
+
+.smart-scroll{
+	position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.scrolled-down{
+	transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+	transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+
+
+</style>
+</head>
+<body class="bg-light" style="padding-top: 56px;">
+
+
+<nav class="navbar smart-scroll navbar-expand-lg navbar-dark bg-primary scrolled-up">
+
+  <a class="navbar-brand" href="#">Dev</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="main_nav">
+
+<ul class="navbar-nav">
+	<li class="nav-item active"> <a class="nav-link" href="/">Home </a> </li>
+	<li class="nav-item"><a class="nav-link" href="/about"> About </a></li>
+	<li class="nav-item"><a class="nav-link" href="/contact"> Contact </a></li>
+	<li class="nav-item dropdown">
+		<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">  Categories  </a>
+	    <ul class="dropdown-menu">
+		  <li><a class="dropdown-item" href="#"> 3D Models </a></li>
+		  <li><a class="dropdown-item" href="#"> Textures </a></li>
+	    </ul>
+	</li>
+</ul>
+
+<ul class="navbar-nav ml-auto">
+	<li class="nav-item"><a class="nav-link" href="#"> Support </a></li>
+	<li class="nav-item"><a class="nav-link" href="#"> License </a></li>
+	<li class="nav-item dropdown">
+		<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false"> Help </a>
+	    <ul class="dropdown-menu dropdown-menu-right">
+		  <li><a class="dropdown-item" href="#"> FAQ </a></li>
+		  <li><a class="dropdown-item" href="#"> Quick Guide </a></li>
+	    </ul>
+	</li>
+</ul>
+
+</div> <!-- navbar-collapse.// -->
+
+</nav>
+
+
+<div class="container" style="max-width: 720px">
+
+<section class="section-content py-5">
+
+		<h3>CG 3D | Dev  </h3>
+        <h6>The Public Domain 3D Models </h6>
+        <h4>License </h4>
+        <p>All 3D models in this site service is under Creative Commons Public Domain Mark and Creative Commons Zero, if there are jurisdictions that do not allow authors to place their work in the public domain. Main reason is like the strict monistic approach the some country copyright law bases on. Not all jurisdictions permit authors to place their works in the public domain while they are alive. In those jurisdictions, Creative Commons Zero grants the widest possible permissions.</p>
+
+		<p> What is allowed?
+
+    You can use all files from this site for anything purposes, like (sell, copy, edit, modify, distribute and add into the work, even for commercial purposes, etc.) without asking permission. Regarding the logos, brands, trademarks or trademarks registered from third parties on this site are the property of their respective owners. You can contact to the owners for commercial use, this site just gives an sample for preview only.
+
+    Attribution is not required. Giving credit to this site is not necessary.
+
+    Actually all files from this site is under public domain pure without credit or encrypted file inside. After edit, modify the files or add into the work, you can choose Creative Commons by you.
+ </p>
+
+		<p> What is not allowed?
+
+This only applies to the character models. Respect the art work of the author and keep these restrictions in mind.
+
+    Don't claim to be the original author of the characters and add into the work, even for commercial purposes without modifying it first.
+
+    Don't redistribute or sell unaltered copies of characters without modifying it first on the market or other platforms. So make it sure that people really don't know if it is from this site.
+ </p>
+
+        <h4>Terms </h4>
+        <p>By accessing this site you are agree, subject to and comply with all policies and any service conditions available to you on this site. Don't abuse our services. For example, do not interfere with our services or try to manipulate using methods other than and the instructions we provide.
+
+Notice about HDRI source links reference that shared with 3D Models by this site, please don't claim to be the original author of the HDRIs. More information you can read that HDRI License.
+
+We understand (File Marketers), so from that we are nether of the chain to help who want to learn better than the sample files that we shared. Our services may not be limited to this, so sometimes additional requirements can apply for the convenience of users. </p>
+</section>
+
+</div><!-- container //  -->
+
+
+</body></html>
